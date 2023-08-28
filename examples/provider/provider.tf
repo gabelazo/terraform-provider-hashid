@@ -1,3 +1,10 @@
-provider "scaffolding" {
-  # example configuration here
+terraform {
+  required_providers {
+    hashid = {
+      source = "gabelazo/hashid"
+    }
+  }
 }
+
+provider "hashid" {}
+
